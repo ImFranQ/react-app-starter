@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Local Bittrader</string>
+    <string name="title_activity_main">Local Bittrader</string>
+    <string name="package_name">com.github.codeartes.localbittrader</string>
+    <string name="custom_url_scheme">com.github.codeartes.localbittrader</string>
+</resources>
