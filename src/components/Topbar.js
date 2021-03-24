@@ -2,6 +2,7 @@ import React from 'react';
 import { Toolbar, Typography, IconButton } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { Menu as MenuIcon } from '@material-ui/icons';
+import { useSelector } from 'react-redux';
 
 const useStyles = makeStyles((theme) => ({
   menuButton: {
@@ -11,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Topbar = ({ onMenuPressed }) => {
   const style = useStyles();
+  const pageName = useSelector(state => state.pageName);
 
   return (
     <Toolbar>
@@ -19,7 +21,7 @@ const Topbar = ({ onMenuPressed }) => {
       </IconButton>
 
       <Typography variant="h6">
-        App Name
+        {pageName}
       </Typography>
     </Toolbar>
   );
