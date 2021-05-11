@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setPageTitle } from '../../redux/actions';
 import Layout from '../../components/Layout';
-import './Welcome.scss';
 
 function Welcome() {
   const dispatch = useDispatch();
